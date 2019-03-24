@@ -8,6 +8,7 @@ body {
 
 .navbar-public {
   background-color:#1d82ef;
+  z-index:1;
 }
 
 .public-jumbotron {
@@ -70,7 +71,7 @@ body {
 }
 
 .navbar-public .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #ccc !important;
+  color: #ccc !important;
 }
 
 .featured-pages .row .col a:hover {
@@ -82,6 +83,8 @@ body {
   padding:1em;
   height:4em;
   width:100%;
+  position: fixed;
+ bottom: 0;
 }
 
 .powered-by {
@@ -102,4 +105,35 @@ body {
   width:25px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+.sidebar {
+  position:fixed;
+  background-color:#dedede;
+  left:0;
+  right:0;
+  width:12em;
+  height:100%;
+  margin-bottom:8em;
+  padding:1em;
+  padding-bottom:8em;
+  overflow-x:scroll;
+}
+
+.sidebar .heading {
+  color:#656565;
+  font-size:12px;
+  padding-top:1em;
+}
+
+.sidebar .link {
+  color:#656565;
+  font-size:14px;
+  padding:.25em;
+  padding-left:.75em;
+}
+
+.page {
+  margin-left: 12em;
+  padding:1em;
 }
