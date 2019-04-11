@@ -1,0 +1,160 @@
+/* The side navigation menu */
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.docuie-sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #1d82ef;
+  position: fixed;
+  height: 100%;
+  color: white;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.docuie-sidebar a {
+  display: block;
+  color: white;
+  padding: .75em;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.docuie-sidebar a.active {
+  background-color: #2b5ec0;
+  color: white;
+}
+
+/* Links on mouse-over */
+.docuie-sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.docuie-content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.docuie-logo {
+  width:100px;
+  padding:1em;
+}
+
+.centerh {
+  text-align:center;
+}
+
+.docuie-project-select {
+  display:block;
+  width:75%;
+  margin:1em;
+  margin-top:0em;
+  margin-left:1.5em;
+}
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2b5ec0;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 35px;
+}
+.select-styled:hover {
+  background-color: #2461d6;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #2b5ec0;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #2b5ec0;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid #2b5ec0;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #2b5ec0;
+  background: #fff;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
+.sidebar-bottom {
+  position:absolute;
+  display:block;
+  bottom:0;
+  left:0;
+  background-color:#2b5ec0;
+  width:100%;
+  text-align:center;
+}
+.profile-icon {
+  display:inline-block;
+  margin-left:.5em;
+  margin-bottom:1em;
+}
+.profile-information {
+  display:inline-block;
+  color:#fff;
+  font-size:18px;
+  padding:1em;
+  padding-left:1em;
+
+}
